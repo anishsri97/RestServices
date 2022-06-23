@@ -59,7 +59,10 @@ public class controller
    {
 	   
 	   try {
-	   ent.setId(0);
+	   
+		   // if id==0 it will add new entry
+	      // it will update in JPA
+		   ent.setId(0);
 	   this.service.save(ent);}catch(userExistInDataBase ex)
 	   {
 		   throw new ResponseStatusException(HttpStatus.BAD_REQUEST,ex.getMessage());

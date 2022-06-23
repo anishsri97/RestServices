@@ -66,7 +66,7 @@ public class restServiceIMP implements restService {
 		  
 		  else
 		  {
-			  user.save(ent);
+			  this.user.save(ent);
 		  }
 
 	}
